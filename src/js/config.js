@@ -1,0 +1,1 @@
+export const FOURTEEN_DAYS = 1209600000;

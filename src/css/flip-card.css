@@ -1,0 +1,87 @@
+.display-segment {
+  width: 15rem;
+  height: 100%;
+  position: relative;
+}
+.display-segment-top,
+.display-segment-bottom {
+  position: relative;
+  overflow: hidden;
+
+  height: 50%;
+  width: 100%;
+}
+.display-segment-top {
+  color: hsl(345, 95%, 62%);
+  background-color: hsl(236, 21%, 21%);
+  line-height: 1.8;
+  overflow: hidden;
+}
+.display-segment-bottom {
+  color: hsl(345, 95%, 68%);
+  background-color: hsl(236, 21%, 27%);
+  line-height: 0;
+  overflow: hidden;
+}
+
+.overlay-segment {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 15rem;
+  height: 100%;
+  perspective: 400px;
+}
+
+.overlay-segment-top,
+.overlay-segment-bottom {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  height: 50%;
+  width: 100%;
+}
+
+.overlay-segment-top {
+  color: hsl(345, 95%, 62%);
+  background-color: hsl(236, 21%, 21%);
+  line-height: 1.8;
+  top: 0;
+  transform-origin: bottom;
+}
+.overlay-segment-bottom {
+  color: hsl(345, 95%, 68%);
+  background-color: hsl(236, 21%, 27%);
+  line-height: 0;
+  border-top: 0.5px solid hsla(237, 18%, 50%, 0);
+  bottom: 0;
+  transform-origin: top;
+}
+
+.overlay-segment-top.flip {
+  animation: flip-top 500ms linear;
+}
+
+.overlay-segment-bottom.flip {
+  animation: flip-bottom 500ms linear;
+}
+
+@keyframes flip-top {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50%,
+  100% {
+    transform: rotateX(-90deg);
+  }
+}
+
+@keyframes flip-bottom {
+  0%,
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}

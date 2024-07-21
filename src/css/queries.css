@@ -1,0 +1,61 @@
+/*************************************
+******* Below 784px (mobile) *********
+**************************************/
+@media (max-width: 49em) {
+  .header {
+    font-size: 1rem;
+  }
+  .countdown {
+    transform: scale(0.7);
+  }
+}
+
+/*************************************
+******* Below 568px (mobile) *********
+**************************************/
+@media (max-width: 35.5em) {
+  .header {
+    font-size: 0.8rem;
+  }
+  .countdown {
+    transform: scale(0.5);
+    margin-top: 2rem;
+  }
+  footer {
+    margin-top: 5rem;
+  }
+}
+
+/*************************************
+******* Below 408px (mobile) *********
+**************************************/
+@media (max-width: 25.5em) {
+  .header {
+    font-size: 1.2rem;
+    transform: scale(0.7);
+  }
+  .countdown {
+    transform: scale(0.4);
+    margin-top: 2rem;
+  }
+  footer {
+    margin-top: 5rem;
+  }
+}
+
+/*************************************
+******* Below 320px (mobile) *********
+**************************************/
+@media (max-width: 20em) {
+  .header {
+    font-size: 1rem;
+    transform: scale(0.7);
+  }
+  .countdown {
+    transform: scale(0.3);
+    margin-top: 1rem;
+  }
+  footer {
+    margin-top: 1rem;
+  }
+}
