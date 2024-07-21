@@ -1,4 +1,6 @@
 import { FOURTEEN_DAYS } from "./config.js";
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 
 class Time {
   ////// DOM
