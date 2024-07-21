@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "![Design preview for the Launch countdown timer coding challenge](./design/desktop-preview.jpg)",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel index.html --dist-dir ./dist",
     "build": "parcel build index.html"
   },
   "author": "maz",
